@@ -12,8 +12,8 @@ import (
 )
 
 func main() {
-	home, _ := homedir.Dir()
-	dbPath := filepath.Join(home, "tasks.db")
+	homeDir, _ := homedir.Dir()
+	dbPath := filepath.Join(homeDir, "gtasks.db")
 	try(db.Init(dbPath))
 	try(cmd.RootCmd.Execute())
 }

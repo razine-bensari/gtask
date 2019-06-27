@@ -14,6 +14,7 @@ var version = &cobra.Command{
 	short: "Shows the version of the command line",
 	Long: "Outputs the version of the command line in the console.",
 	Run: func(cmd *cobra.Command, args []String){
-		//do something
+			var invoker
+			invoker.executeCommand( vesioncommnand)
 	}
 }

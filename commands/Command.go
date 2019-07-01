@@ -1,19 +1,22 @@
 package commands
 
 import (
+	"gtask/db"
 	Logger "github.com/sirupsen/logrus"
 )
 
 //Command ...
 type Command interface {
-	Execute(Command) error
+	Execute() error
 }
+
+type 
 
 //type AddCommand func(db *bolt.DB, logger)
 
-func addCommand(db *bolt.DB, log Logger) func(Command) error {
-	return func(command Command) {
-		log.init()
+func addCommand(db *bolt.DB, log Logger) func() error {
+	return func() {
+		db.create()
 	}
 }
 

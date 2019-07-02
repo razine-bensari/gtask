@@ -1,4 +1,4 @@
-package commands
+package main
 
 import (
 	"gtask/db"
@@ -10,7 +10,6 @@ type Command interface {
 	Execute() error
 }
 
-type 
 
 //type AddCommand func(db *bolt.DB, logger)
 

@@ -4,9 +4,10 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
-
 	"gtask/cmd"
 	"gtask/db"
+	"gtask/client"
+	"gtask/domain"
 
 	homedir "github.com/mitchellh/go-homedir"
 )

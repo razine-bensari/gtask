@@ -1,7 +1,7 @@
-package invoker
+package main
 
 import (
-	"gtask/commands"
+	"gtask/main"
 )
 //Invoker for command pattern...
 type Invoker struct {

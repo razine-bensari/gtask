@@ -4,7 +4,7 @@ import (
 	"time"
 )
 
-//KIND ...
+//KIND ... (they are defaults values needed by googleapis)
 const (
 	KindTaskList string = "tasks#taskList"
 	KindTask string     = "tasks#task"

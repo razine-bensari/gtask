@@ -1,4 +1,4 @@
-package main
+package db
 
 import (
 	"time"
@@ -9,6 +9,18 @@ import (
 //A bucket is a key value pair
 var gTaskBucket = []byte("gtasks")
 var db *bolt.DB
+
+//TaskEntity ...
+type TaskEntity struct {
+	Key   int
+	value Task
+}
+
+//TaskListEntity ...
+type TaskListEntity struct {
+	Key   int
+	value TaskList
+}
 
 //Init ...
 func Init(dbPath string) error {

@@ -46,7 +46,7 @@ import (
 
 // }
 
-var rootCmd = &cobra.Command{
+var RootCmd = &cobra.Command{
 	Use:   "gtask",
 	Short: "gTask is a CLI for google task",
 	Long:  "A simple, intuitive cli for google task. Documentation can be found here:", //TODO add documentation + populate readMe
@@ -56,7 +56,7 @@ var rootCmd = &cobra.Command{
 }
 
 func Execute() {
-	if err := rootCmd.Execute(); err != nil {
+	if err := RootCmd.Execute(); err != nil {
 		fmt.Println(err)
 		os.Exit(1)
 	}

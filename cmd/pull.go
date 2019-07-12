@@ -5,14 +5,14 @@ import (
 )
 
 func init() {
-	rootCmd.AddCommand(pull)
+	RootCmd.AddCommand(pull)
 }
 
 var pull = &cobra.Command{
-	Use: "pull",
-	short: "Pulls your remote google tasks to your local computer",
-	Long: "Pulls all your google tasks to your local computer if not present.",
-	Run: func(cmd *cobra.Command, args []String){
+	Use:   "pull",
+	Short: "Pulls your remote google tasks to your local computer",
+	Long:  "Pulls all your google tasks to your local computer if not present.",
+	Run: func(cmd *cobra.Command, args []string) {
 		//do something
-	}
+	},
 }

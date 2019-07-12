@@ -5,14 +5,14 @@ import (
 )
 
 func init() {
-	rootCmd.AddCommand(list)
+	RootCmd.AddCommand(list)
 }
 
 var list = &cobra.Command{
-	Use: "list",
-	short: "Lists all google task",
-	Long: "Lists all google tasks from google task account or computer if no internet is found.",
-	Run: func(cmd *cobra.Command, args []String){
+	Use:   "list",
+	Short: "Lists all google task",
+	Long:  "Lists all google tasks from google task account or computer if no internet is found.",
+	Run: func(cmd *cobra.Command, args []string) {
 		//do something
-	}
+	},
 }

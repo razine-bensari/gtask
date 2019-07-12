@@ -5,14 +5,14 @@ import (
 )
 
 func init() {
-	rootCmd.AddCommand(login)
+	RootCmd.AddCommand(login)
 }
 
 var login = &cobra.Command{
-	Use: "login",
-	short: "Logs in to your google account",
-	Long: "Logs in to your google account using OAuth 2.0.",
-	Run: func(cmd *cobra.Command, args []String){
+	Use:   "login",
+	Short: "Logs in to your google account",
+	Long:  "Logs in to your google account using OAuth 2.0.",
+	Run: func(cmd *cobra.Command, args []string) {
 		//do something
-	}
+	},
 }

@@ -1,7 +1,8 @@
-package db
+package main
 
 import (
 	"time"
+
 	"github.com/boltdb/bolt"
 )
 

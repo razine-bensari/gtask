@@ -1,8 +1,7 @@
 package main
 
-import (
-	"gorequest"
-)
+import "github.com/parnurzeal/gorequest"
+
 
 //GoogleTaskClient ...
 type GoogleTaskClient struct {

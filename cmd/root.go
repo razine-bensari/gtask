@@ -2,6 +2,7 @@ package cmd
 
 import (
 	"fmt"
+	"gtask/oauth"
 	"os"
 
 	"github.com/spf13/cobra"
@@ -54,6 +55,8 @@ var RootCmd = &cobra.Command{
 		fmt.Println("gTask is a CLI for Google Task.")
 	},
 }
+
+var googleTaskClient = oauth.OrchestrateOAuth()
 
 func Execute() {
 	if err := RootCmd.Execute(); err != nil {

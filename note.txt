@@ -4,4 +4,3 @@ go get -u github/ ... /task/v1
 go get -u github/spf13/cobra
 go get -u github/spf13/pflag
 
-read the readme from the todo exercise https://github.com/gophercises/task

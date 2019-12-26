@@ -1,6 +1,9 @@
 package main
 
-import "github.com/parnurzeal/gorequest"
+import (
+	"github.com/parnurzeal/gorequest"
+	_ "google.golang.org/api/tasks/v1"
+	)
 
 
 //GoogleTaskClient ...
@@ -169,4 +172,8 @@ func (googleTaskClient GoogleTaskClient) MoveTaskInTaskListWithQuery(taskList Ta
 		Set("access-token", googleTaskClient.token). //TODO
 		Query(query).
 		End()
+}
+
+func doSom(){
+
 }
